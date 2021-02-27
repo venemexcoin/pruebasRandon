@@ -1,0 +1,36 @@
+.pactica_css {
+  width: 100%;
+  height: 500px;
+  background: #424242;
+}
+
+.pactica__css-caja1 {
+  background: #3b5bdb;
+  color: #424242;
+  width: 246px;
+  height: 350px;
+  /*text-align: center;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pactica__css-caja1 h3 {
+  text-align: center;
+  color: #fff;
+  line-height: 350px;
+}
+
+/*.imagen {
+  width: 100px;
+}*/
+
+.pactica__css-caja1 p {
+  background: #fff;
+  color: #494949;
+  width: 70%;
+  font-size: 12px;
+  padding: 4px;
+}
