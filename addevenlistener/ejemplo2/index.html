@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventlistener</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3226d1ef96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="ejemplo_title">Eventos del Javascript</h1>
+
+<form id="selector">
+    <span class="ejemplo_subtitle">Seleccione su lenguajes favoritos:</span><br>
+    <select id="cbxLenguajes" class="ejemplo_selector" onchange="seleccionLenguaje()">
+        <option value="selec" id="selec">Seleccione Un lenguaje</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C#">C#</option>
+        <option value="Java">Java</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+    </select>
+</form>
+    <br>
+    <span id="lblLenguajeSeleccinado" class="ejemplo_futer"></span>
+
+    <div class="exito-message" id="animationmessage">
+    <div class="message" id="message">
+        <p>Solicitud Enviada <i class="far fa-thumbs-up"></i></p>
+    </div>
+    </div>
+
+</div>
+
+    <div class="contenedor">
+        <header>MINIMALISTIC FORM</header>
+
+<form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <input id="submit" type="submit" value="GO!">
+  
+</form>
+
+    </div>
+    
+    
+    <script src="app.js"></script>
+    <script src="anime.min.js"></script>
+    <script>
+       
+       anime({
+           targets: '#message',
+           value: [0, 1000],
+           round: 1,
+           easing: 'easeInOutExpo'
+       })
+    </script>
+</body>
+</html>
